@@ -13,10 +13,9 @@ namespace vacay.Services
             _repo = repo;
         }
 
-        internal IEnumerable<IPurchasable> getAll();
+        internal IEnumerable<IPurchasable> getAll()
         {
-            var data = _repo.GetAll();
-            return data;
+            return _repo.GetAll();
         }
-}
+    }
 }
